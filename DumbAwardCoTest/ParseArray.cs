@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DumbAwardCoTest
+﻿namespace DumbAwardCoTest
 {
     internal class ParseArray
     {
@@ -16,7 +10,7 @@ namespace DumbAwardCoTest
 
             for (int i = 0; i < array.Length; i++)
             {
-                if(result.Count != 0)
+                if (result.Count != 0)
                 {
                     if (!result.Contains(array[i]))
                     {
@@ -30,7 +24,6 @@ namespace DumbAwardCoTest
                     arrayToList.RemoveAt(i);
                 }
             }
-
             return result.ToArray();
         }
     }
